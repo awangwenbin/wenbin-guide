@@ -53,7 +53,9 @@ export default defineConfig({
         items: [
           { text: '面向切面编程（AOP）', link: '/spring/aop' },
           { text: 'spring-tx', link: '/spring/tx' },
-          { text: '自定义start', link: '/spring/start' }
+          { text: '自定义start', link: '/spring/start' },
+          { text: 'security', link: '/spring/security' },
+          { text: 'amqp-rabbitmq', link: '/spring/rabbitmq' }
         ]
       },
       {
