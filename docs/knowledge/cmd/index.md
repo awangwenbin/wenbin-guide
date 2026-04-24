@@ -1,5 +1,5 @@
-1、linux
-
+# 常用命令
+1. linux
 ```Linux
 1、查看防火墙的状态（dead代表关闭 running代表已经开启）
 systemctl status firewalld
@@ -28,13 +28,21 @@ netstat -ano
 taskkill /f /t /pid "进程PID"
 12、在nacos/bin目录中，输入命令启动Nacos：
 sh startup.sh -m standalone
-
 13、yum相关
 yum clean all
 yum makecache
+14、RocketMQ相关
+# 启动 NameServer
+start mqnamesrv.cmd
+# 启动 Broker
+start mqbroker.cmd -n 127.0.0.1:9876 autoCreateTopicEnable=true
+# 关闭 NameServer
+mqshutdown namesrv
+# 关闭 Broker
+mqshutdown broker
 ```
 
-13、关于git
+2. 关于git
 
 ```
 branch	checkout	merge	clone
@@ -44,7 +52,7 @@ ssh://git@192.168.88.110:10022/wangenin/leetcode.git
 git@192.168.88.110:wangenin/leetcode.git
 ```
 
-15、docker命令
+3. docker命令
 
 ```
 1、保存镜像为tar
@@ -80,7 +88,7 @@ docker rm $(docker ps -aq)
 docker rmi $(docker images -aq)
 ```
 
-16、创建vue项目
+4. 创建vue项目
 
 ```
 新：
@@ -89,19 +97,19 @@ npm create vue@latest
 vue create 项目名
 ```
 
-17、maven下载jar包指令
+5. maven下载jar包指令
 
 ```
 mvn dependency:resolve -Dclassifier=sources
 ```
 
-18、jdbc
+6. jdbc
 
 ```
 jdbc:mysql:///?serverTimezone=UTC&userUnicode=true&useSSL=false&characterEncoding=utf-8
 ```
 
-19、linux常用命令
+7. linux常用命令
 
 ```
 ls -a -l -h: -a显示隐藏文件 -l -h显示大小
@@ -125,7 +133,7 @@ ssh root@8.130.110.183
 权限：chmod 创建文件：touch
 ```
 
-20、docker配置
+8. docker配置
 
 ```
 mysql:
@@ -244,14 +252,14 @@ nginx:
 	-d nginx:1.24.0
 ```
 
-21、小程序秘钥
+9. 小程序秘钥
 
 ```
 wx45326c22b42fb6cf
 5f7aa89005584a4f83be03d85aa73df6
 ```
 
-22、html
+10. html
 
 ```
 常见块元素：<h1>~<h6><p><div><ul><ol><li>
@@ -259,13 +267,13 @@ wx45326c22b42fb6cf
 常见行内块元素：<img/><input/><td>
 ```
 
-23、注册表
+11. 注册表
 
 ```
 计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace
 ```
 
-23、js事件类型
+12. js事件类型
 
 ```
 鼠标：click 点击 mouseenter 鼠标经过 mouseleave 鼠标离开 => 不支持冒泡
@@ -275,7 +283,7 @@ wx45326c22b42fb6cf
 表单输入：input 用户输入触发
 ```
 
-24、linux环境变量
+13. linux环境变量
 
 ```
 # set java environment
@@ -284,13 +292,13 @@ PATH=$JAVA_HOME/bin:$PATH
 export JAVA_HOME PATH
 ```
 
-25、windows杀进程
+14. windows杀进程
 
 ```shell
 taskkill /f /pid 1600 /t
 ```
 
-26、挂载本地yum镜像源
+15. 挂载本地yum镜像源
 
 ```
 mkdir /mnt/centos
@@ -301,7 +309,7 @@ yum makecache
 
 ```
 
-27、RabbitMQ有哪些工作模式？
+16. RabbitMQ有哪些工作模式？
 
 - simple简单模式
 
@@ -327,7 +335,7 @@ yum makecache
 
 ![alt text](image-5.png)
 
-28、设置淘宝源以及恢复官方源
+17. 设置淘宝源以及恢复官方源
 
 ```
 # 最新地址 淘宝 NPM 镜像站喊你切换新域名啦!
@@ -337,7 +345,7 @@ npm config set registry https://registry.npmjs.org
 
 ```
 
-29、docker加速
+18. docker加速
 
 ![alt text](image-6.png)
 
@@ -359,7 +367,7 @@ telnet   查看日志journalctl -u minio.service
 systemctl restart 服务名称.service
 ```
 
-30、SpringBoot的配置文件加载
+19. SpringBoot的配置文件加载顺序
 
 ```
 1、resources

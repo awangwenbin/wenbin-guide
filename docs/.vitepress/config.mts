@@ -45,22 +45,18 @@ export default defineConfig({
         ]
       },
       {
+        text: '常用软件安装',
+        items: [
+          { text: 'RocketMQ', link: '/software/rocketmq' },
+        ]
+      },
+      {
         text: '小知识',
         items: [
           { text: 'github设置ssh', link: '/knowledge/github-ssh-key' },
           { text: 'vitepress部署github', link: '/knowledge/vitepress-deploy-github' },
           { text: '四舍五入', link: '/knowledge/round' },
           { text: '常用命令', link: '/knowledge/cmd' }
-        ]
-      },
-      {
-        text: '常用软件安装',
-        items: [
-          {
-            text: 'RocketMQ', items: [
-              { text: 'windows安装', link: '/software/rocketmq/windows' },
-            ]
-          }
         ]
       },
     ],
