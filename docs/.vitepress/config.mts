@@ -39,6 +39,21 @@ export default defineConfig({
     sidebar: [
       { text: 'markdown', link: '/markdown' },
       {
+        text: 'Spring',
+        items: [
+          { text: 'AOP', link: '/spring/aop' },
+        ]
+      },
+      {
+        text: '小知识',
+        items: [
+          { text: 'github设置ssh', link: '/knowledge/github-ssh-key' },
+          { text: 'vitepress部署github', link: '/knowledge/vitepress-deploy-github' },
+          { text: '四舍五入', link: '/knowledge/round' },
+          { text: '常用命令', link: '/knowledge/cmd' }
+        ]
+      },
+      {
         text: '常用软件安装',
         items: [
           {
@@ -46,23 +61,6 @@ export default defineConfig({
               { text: 'windows安装', link: '/software/rocketmq/windows' },
             ]
           }
-        ]
-      },
-      {
-        text: 'Spring',
-        items: [
-          { text: '面向切面编程（AOP）', link: '/spring/aop' },
-          { text: 'spring-tx', link: '/spring/tx' },
-          { text: '自定义start', link: '/spring/start' },
-          { text: 'security', link: '/spring/security' },
-          { text: 'amqp-rabbitmq', link: '/spring/rabbitmq' }
-        ]
-      },
-      {
-        text: '小知识',
-        items: [
-          { text: 'github设置ssh', link: '/knowledge/github-ssh-key' },
-          { text: 'vitepress部署github', link: '/knowledge/vitepress-deploy-github' }
         ]
       },
     ],
