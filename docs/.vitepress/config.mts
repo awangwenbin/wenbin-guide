@@ -53,10 +53,9 @@ export default defineConfig({
       {
         text: '小知识',
         items: [
-          { text: 'github设置ssh', link: '/knowledge/github-ssh-key' },
-          { text: 'vitepress部署github', link: '/knowledge/vitepress-deploy-github' },
           { text: '四舍五入', link: '/knowledge/round' },
-          { text: '常用命令', link: '/knowledge/cmd' }
+          { text: '常用命令', link: '/knowledge/cmd' },
+          { text: '部署vitepress', link: '/knowledge/deploy-vitepress' },
         ]
       },
     ],

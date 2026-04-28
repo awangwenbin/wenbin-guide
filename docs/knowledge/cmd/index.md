@@ -331,7 +331,7 @@ yum makecache
 
 ![alt text](image-4.png)
 
-延迟消息
+- 延迟消息
 
 ![alt text](image-5.png)
 
@@ -340,7 +340,6 @@ yum makecache
 ```
 # 最新地址 淘宝 NPM 镜像站喊你切换新域名啦!
 npm config set registry https://registry.npmmirror.com
-
 npm config set registry https://registry.npmjs.org
 
 ```
@@ -442,3 +441,22 @@ npx openskills install anthropics/skills
 npx openskills sync
 ```
 
+20. nginx代理网站
+```nginx
+server {
+	listen       80;
+	server_name  zentao.dev.jzkg.cn;
+
+	location / {
+		proxy_pass http://localhost:8000;
+		proxy_set_header Host $host;
+		proxy_set_header X-Real-IP $remote_addr;
+		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+	}
+	error_page   500 502 503 504  /50x.html;
+	location = /50x.html {
+		root   html;
+	}
+}
+
+```
