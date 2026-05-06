@@ -41,7 +41,7 @@ export default defineConfig({
       {
         text: 'Spring',
         items: [
-          { text: 'AOP', link: '/spring/aop' },
+          { text: '切面编程', link: '/spring/aop' },
         ]
       },
       {
@@ -55,7 +55,7 @@ export default defineConfig({
         items: [
           { text: '四舍五入', link: '/knowledge/round' },
           { text: '常用命令', link: '/knowledge/cmd' },
-          { text: '部署vitepress', link: '/knowledge/deploy-vitepress' },
+          { text: '部署本项目', link: '/knowledge/deploy-vitepress' },
         ]
       },
     ],

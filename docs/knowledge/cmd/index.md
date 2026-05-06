@@ -394,7 +394,7 @@ jmap工具：查看堆内存占用情况
 jconsole工具：图形界面的，多功能监测工具
 ```
 
-SQL调优：
+20. SQL调优：
 
 ![alt text](image-7.png)
 
@@ -422,26 +422,26 @@ SQL调优：
 
 ```
 SQL的执行顺序：
-(1) FROM [Left Table]
-(2) ON (Join Condition)
-(3) JOIN [Right Table]
-(4) WHERE
-(5) GROUP BY
-(6) HAVING
-(7) ORDER BY
-(8) SELECT
-(9) DISTINCT
-(10) LIMIT / OFFSET
+FROM → 确定数据来源的表 / 视图
+JOIN → 关联其他表
+ON → 关联条件（JOIN 的筛选）
+WHERE → 对关联后的行进行筛选
+GROUP BY → 按列分组，生成聚合数据
+HAVING → 对分组后的聚合结果进行筛选
+SELECT → 计算字段、表达式、别名（窗口函数结果在这里被接收）
+DISTINCT → 去重（基于 SELECT 的结果）
+ORDER BY → 排序（此时 SELECT 的别名已经生效，可以直接用）
+LIMIT / OFFSET → 限制结果条数
 ```
 
+20. 添加agent技能
 ![alt text](image-8.png)
-
 ```
 npx openskills install anthropics/skills
 npx openskills sync
 ```
 
-20. nginx代理网站
+21. nginx代理网站
 ```nginx
 server {
 	listen       80;
